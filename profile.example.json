@@ -1,0 +1,86 @@
+{
+  "personal": {
+    "full_name": "Your Name",
+    "email": "you@example.com",
+    "phone": "+000 000 000 000",
+    "location": "Your City, Country",
+    "linkedin": "https://www.linkedin.com/in/your-handle/",
+    "portfolio": "",
+    "github": "https://github.com/your-handle",
+    "current_company": ""
+  },
+  "target_roles": {
+    "titles": [
+      "Data Analyst",
+      "Analytics Engineer",
+      "BI Analyst"
+    ],
+    "keywords": [
+      "SQL",
+      "Power BI",
+      "dbt",
+      "data analyst",
+      "analytics engineer",
+      "business intelligence",
+      "reporting"
+    ],
+    "locations": [
+      "Nairobi",
+      "Kenya",
+      "Remote"
+    ],
+    "work_type": [
+      "full-time",
+      "hybrid",
+      "remote"
+    ],
+    "salary_expectation_kes": "000000-000000"
+  },
+  "experience": {
+    "years_total": 0,
+    "current_title": "Your Title",
+    "current_company": "",
+    "summary": "One-paragraph professional summary used to tailor applications."
+  },
+  "skills": {
+    "technical": [
+      "Power BI",
+      "SQL",
+      "Excel"
+    ],
+    "soft": [
+      "Communication",
+      "Problem Solving"
+    ],
+    "certifications": []
+  },
+  "education": [
+    {
+      "degree": "Your Degree",
+      "institution": "Your Institution",
+      "year": null
+    }
+  ],
+  "work_history": [
+    {
+      "title": "Your Title",
+      "company": "",
+      "period": "",
+      "bullets": [
+        "Key achievement or responsibility one.",
+        "Key achievement or responsibility two."
+      ]
+    }
+  ],
+  "cv_plaintext": "Plain-text version of your CV. Used by the (optional) auto-apply feature to tailor cover emails. Leave as a short summary if you are only using the daily digest.",
+  "application": {
+    "auto_apply_enabled": false,
+    "notify_only": true,
+    "sender_name": "Your Name",
+    "sender_email": "you@example.com",
+    "notify_email": "you@example.com",
+    "cover_letter_tone": "professional and concise",
+    "attach_cv_pdf": false,
+    "cv_pdf_path": "./assets/Your_CV.pdf"
+  }
+}

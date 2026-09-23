@@ -1,0 +1,47 @@
+# Secrets & local config
+.env
+env
+credentials/
+jobbot.db
+
+# Personal profile — contains your name, contact details and CV text.
+# Copy profile.example.json to profile.json and fill it in locally.
+profile.json
+
+# Saved page renders / scraping artifacts
+*.html
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Assets (user places their own CV here; don't commit personal docs)
+assets/

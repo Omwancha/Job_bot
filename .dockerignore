@@ -1,0 +1,21 @@
+# Local Python environment / caches — never ship these
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Secrets and local state — injected at runtime / kept on a volume, not in the image
+.env
+env
+credentials/
+jobbot.db
+jobbot.log
+logs/
+
+# Dev artifacts
+*.html
+.git/
+.gitignore
+DEPLOY.md

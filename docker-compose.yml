@@ -1,0 +1,29 @@
+services:
+  jobbot:
+    build: .
+    image: jobbot:latest
+    container_name: jobbot
+    # Run tini as PID 1: it reaps zombie processes (e.g. leftover Chrome
+    # children) and forwards signals, so supercronic runs as a child and
+    # avoids its PID-1 reaper path.
+    init: true
+    # Secrets (Gmail, Anthropic, keywords) are injected from .env at runtime,
+    # never baked into the image.
+    env_file: .env
+    environment:
+      # Server timezone so RUN_TIME means what you expect (containers default to UTC)
+      TZ: Africa/Nairobi
+      # Persist state on the volume regardless of what .env says
+      DB_PATH: /data/jobbot.db
+      GMAIL_OAUTH_CREDENTIALS_PATH: /data/credentials/gmail_oauth.json
+      GMAIL_OAUTH_TOKEN_PATH: /data/credentials/gmail_token.json
+      # Set to "true" to also run once when the container starts
+      RUN_ON_START: "false"
+    volumes:
+      - jobbot-data:/data
+    # Chrome needs more shared memory than Docker's 64 MB default
+    shm_size: "1gb"
+    restart: unless-stopped
+
+volumes:
+  jobbot-data:
