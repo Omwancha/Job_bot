@@ -87,6 +87,4 @@ Full details, including how state persists and how to enable auto-apply, are in
 | `RUN_TIME` | Daily run time, `HH:MM` |
 | `USE_SELENIUM` / `SELENIUM_HEADLESS` | Enable headless-Chrome rendering (Fuzu) |
 
-## License
 
-MIT (or your choice).
